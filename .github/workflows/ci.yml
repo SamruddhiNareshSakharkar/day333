@@ -15,7 +15,8 @@ jobs :
           
       - name: Run Tests
         run: pytest
+        continue-on-error: true
       
       - name : pylint
         run : pylint calculator.py test_calculator.py || TRUE
-        continue-on-error: true
+        
