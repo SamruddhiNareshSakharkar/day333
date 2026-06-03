@@ -9,10 +9,10 @@ jobs :
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: pip install pytest
           
           
-      - name: Run tests
+      - name: Run Tests
         run: pytest
           
